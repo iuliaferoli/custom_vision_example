@@ -1,0 +1,6 @@
+static/
+__pycache__
+*.xml
+pycharm_project/data/blob_storage_key.txt
+pycharm_project/data/
+env_settings.json
