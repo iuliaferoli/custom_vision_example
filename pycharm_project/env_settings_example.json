@@ -1,0 +1,35 @@
+{
+    "TRAINING_KEY": "CHANGEME",
+    "PREDICTION_KEY": "CHANGEME",
+    "ENDPOINT": "https://westeurope.api.cognitive.microsoft.com",
+    "CLASSIFICATION_MODEL": {
+        "PROJECT_NAME": "classify coils - updated dataset",
+        "PUBLISHED_NAME": "Iteration1",
+        "PROJECT_ID": "cc4150bd-31c1-4353-9911-9b7f31d8c53a"
+    },
+    "DETECTION_MODEL": {
+        "PROJECT_NAME": "Detect coil",
+        "PUBLISHED_NAME": "detection_coils_iteration_2",
+        "PROJECT_ID": "a9f8e61d-decf-4848-b3bc-bc0f2766d517"
+    },
+    "BLOB_STORAGE": {
+        "ACCOUNT_NAME": "CHANGEME",
+        "ACCOUNT_KEY": "CHANGEME",
+        "CONTAINER_CLASSIFY": "customvisiontesting",
+        "CONTAINER_DETECT": "general-coil-images",
+        "BASE_URL": "https://batchscoring.blob.core.windows.net/"
+    },
+    "MODEL_PARAMETERS": {
+        "THRESHOLD": 0.2,
+        "BUFFER": 10,
+        "TAGS": ["damages", "Negative"],
+        "CAMERA_NAMES": ["A3_West", "A4_Noord", "A6_Oost", "A6_Zuid"]
+    },
+    "FILE_LOCATIONS": {
+        "DATA_FOLDER": "data",
+        "SAVED_DETECTED_COILS": "all_images_detected_test.json",
+        "SAVED_CLASSIFIED_COILS": "all_images_classified_test.json",
+        "SAVED_STATS": "statistics.json",
+        "NEW_DATA": "newdatatest.json"
+    }
+}
